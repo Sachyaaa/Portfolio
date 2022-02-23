@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Nunito:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    color: #fff;
+}
+.name-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #40ddf1;
+    height: 100vh;
+}
+.name-section h1{
+    font-family: 'Allura', cursive;
+    font-size: 80px;
+    font-weight: 400;
+    position: relative;
+    top: -30px;
+}
+.name-section button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.name-section button:hover{
+    color: #40ddf1;
+    background-color: #fff;
+}
+.name-section p{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+}
+.box{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: -30px;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .10em solid #fff;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) forwards, blinking .8s infinite;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 0;
+    padding-right: 3px;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: #fff; }
+  }
