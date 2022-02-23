@@ -6,8 +6,58 @@
 }
 body{
     width: 100vw;
+    overflow-x: hidden;
+    color: #fff;
+    padding: 0px 20px;
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(122, 121, 121);
+    border-radius: 10px;
+  }
+
+nav{
+    width: calc(100vw - 40px);
+    background-color: #40ddf1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: fixed;
+    top: 0;
+}
+.sign{
+    font-family: 'Allura', cursive;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    /* padding-bottom: 14px; */
+    color: rgb(235, 232, 232);
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.3s all ease-in-out;
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
     color: #fff;
 }
+
 .name-section{
     width: 100%;
     display: flex;
@@ -52,7 +102,7 @@ body{
 }
 .typed-out{
     overflow: hidden;
-    border-right: .10em solid #fff;
+    border-right: .10em solid rgb(189, 187, 187);
     white-space: nowrap;
     animation: typing 3s steps(20, end) forwards, blinking .8s infinite;
     font-size: 1.6rem;
@@ -66,5 +116,5 @@ body{
   }
   @keyframes blinking {
     from { border-color: transparent }
-    to { border-color: #fff; }
+    to { border-color: rgb(201, 198, 198); }
   }
